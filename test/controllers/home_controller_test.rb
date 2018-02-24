@@ -1,5 +1,5 @@
 require 'test_helper'
-
+=begin
 class HomeControllerTest < ActionDispatch::IntegrationTest
   test "should get top" do
     get home_top_url
@@ -7,3 +7,4 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
   end
 
 end
+=end

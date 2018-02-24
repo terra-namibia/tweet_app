@@ -1,5 +1,5 @@
 require 'test_helper'
-
+=begin
 class PostsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get posts_index_url
@@ -7,3 +7,4 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
 end
+=end
