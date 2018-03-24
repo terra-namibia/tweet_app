@@ -26,7 +26,8 @@ Rails.application.routes.draw do
 
   #API
   namespace :api do
-    get "/api/users",:to => "api#users"
+    get "/users/all" => "users#all"
+    get "/users/:id" => "users#show"
   end
   
 
