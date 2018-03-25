@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   namespace :api do
     get "/users/all" => "users#all"
     get "/users/:id" => "users#show"
+    post "/users/create" => "users#create"
   end
   
 
