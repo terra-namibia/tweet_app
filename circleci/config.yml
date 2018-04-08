@@ -28,10 +28,10 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only: react
       - deploy:
           requires:
             - approve
           filters:
             branches:
-              only: master
+              only: react
