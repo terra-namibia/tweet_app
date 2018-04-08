@@ -3,6 +3,12 @@ jobs:
   build:
     docker:
       - image: debian:stretch
+    machine:
+      node:
+        version: 9.3.0
+      post:
+        - npm install -g npm@5
+      timezone: Asia/Tokyo
     steps:
       - checkout
       - run:
