@@ -5,9 +5,9 @@ jobs:
       - image: debian:stretch
     machine:
       node:
-        version: 10.3.0
+        version: 9.3.0
       post:
-        - npm install -g npm@6
+        - npm install -g npm@5
       timezone: Asia/Tokyo
     steps:
       - checkout
@@ -17,3 +17,21 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - approve:
+          type: approval
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - approve
+          filters:
+            branches:
+              only: master
