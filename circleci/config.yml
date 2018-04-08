@@ -5,9 +5,9 @@ jobs:
       - image: debian:stretch
     machine:
       node:
-        version: 6.3.0
+        version: 10.3.0
       post:
-        - npm install -g npm@3
+        - npm install -g npm@6
       timezone: Asia/Tokyo
     steps:
       - checkout
