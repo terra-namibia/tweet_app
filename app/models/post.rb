@@ -7,4 +7,9 @@ class Post < ApplicationRecord
       return User.find_by(id: self.user_id)
     end
     
+    # model cache
+    def self.cache_all
+      Rails.cache.fetch("posts"){Post.all}
+    end
+  
 end

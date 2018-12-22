@@ -30,6 +30,15 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt' #, '~> 3.1.7'
 
+# redis
+gem 'redis-rails'
+
+# page caching
+gem 'actionpack-page_caching'
+
+# action caching
+gem 'actionpack-action_caching'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
