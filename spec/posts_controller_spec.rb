@@ -2,8 +2,8 @@
 require 'rails_helper'
 
 RSpec.describe PostsController, type: :controller do
-  let(:user1) { FactoryGirl.create(:user) }
-  let(:post1) { FactoryGirl.create(:post) }
+  let(:user1) { FactoryBot.create(:user) }
+  let(:post1) { FactoryBot.create(:post) }
   let(:params) { {} }  
   let(:session) { {user_id: user1.id} }
 

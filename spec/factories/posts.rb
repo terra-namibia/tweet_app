@@ -1,6 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :post do
-    content "MyString"
-    user_id 1
+    content {"MyString"}
+    user_id {1}
   end
 end

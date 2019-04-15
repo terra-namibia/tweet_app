@@ -55,7 +55,8 @@ group :development, :test do
   gem 'selenium-webdriver'
   #rspec
   gem "rspec-rails"
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
+  gem 'database_cleaner'
   gem "guard-rspec"
   gem "spring-commands-rspec"
   #rspec rails5以降はassignsとassert_templateは自分で追加する必要がある
