@@ -181,6 +181,7 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rb-readline (0.5.5)
     redis (4.0.2)
     redis-actionpack (5.0.2)
       actionpack (>= 4.0, < 6)
@@ -303,6 +304,7 @@ DEPENDENCIES
   rails (~> 5.1.4)
   rails-controller-testing
   rails-erd
+  rb-readline
   redis-rails
   rspec-rails
   sass-rails (~> 5.0)
