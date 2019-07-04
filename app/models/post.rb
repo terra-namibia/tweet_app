@@ -7,6 +7,11 @@ class Post < ApplicationRecord
       return User.find_by(id: self.user_id)
     end
     
+    def abbreviated_content
+      # 最大19文字まで表示
+      content.size > 19 ? "#{content.slice(0, 19)}..." : content
+    end
+    
     # model cache
     def self.cache_all
       Rails.cache.fetch("posts"){Post.all}
